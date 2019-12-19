@@ -29,11 +29,12 @@ draw_outline no
 uppercase no
 
 #------------------------- Colors
-default_color DCDCDC 		#220 220 220	Gainsboro
-color0 77B753			#Special Color
-color1 DDDDDD			#Shades of grey
-color2 AAAAAA
-color3 999999
+#default_color= '970F49',
+#default_shade_color= '333333',
+#default_outline_color= 'black',
+#color1 = 'ff981a',
+#color2 = '4FF788',
+color3 = 'ff981a
 
 #------------------------- BORDERS
 draw_borders no
@@ -54,7 +55,7 @@ update_interval 3
 TEXT
 ${voffset 12}${GOTO 50}${font}System
 
-${GOTO 50}${font}OS: ${font Monofur:size=8}${color0}${exec cat /etc/issue.net} (${machine})${color}
+${GOTO 50}${font}${iexec 10 uname -a}${font Monofur:size=8}${color0}${exec cat /etc/issue.net} (${machine})${color}
 ${GOTO 50}${font}Kernel: ${font Monofur:size=8}${kernel}
 ${GOTO 50}${font}${color1}Uptime: ${font Monofur:size=8}${uptime_short}
 
