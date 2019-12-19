@@ -29,11 +29,13 @@ draw_outline no
 uppercase no
 
 #------------------------- Colors
-default_color DCDCDC 		#220 220 220	Gainsboro
-color0 77B753			#Special Color
-color1 DDDDDD			#Shades of grey
-color2 AAAAAA
-color3 999999
+#default_color= '970F49',
+#default_shade_color= '333333',
+#default_outline_color= 'black',
+#color1 = 'ff981a',
+#color2 = '4FF788',
+color3 = 'ff981a',
+
 
 #------------------------- BORDERS
 draw_borders no
